@@ -17,7 +17,7 @@
 		"issues": "https://github.com/Flarum-Chinese/mediaembed/issues"
 	},
 	"icon": {
-		"name": "youku-play",
+		"name": "youtube-play",
 		"backgroundColor": "#cc181e",
 		"color": "#fff"
 	}
