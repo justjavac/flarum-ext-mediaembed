@@ -20,6 +20,6 @@ Flarum 论坛使用 [s9e/TextFormatter](https://github.com/s9e/TextFormatter) �
 
 ## 支持的网站
 
-- ku6 酷6 `http://www.ku6.com` issues#2
-- music163 网易云音乐 `http://music.163.com` issues#1
-- youku 优酷 `http://www.youku.com` （s9e/TextFormatter 默认已经支持）
+- ku6 [酷6](http://www.ku6.com) [issues#2](https://github.com/Flarum-Chinese/mediaembed/issues/2)
+- music163 [网易云音乐](http://music.163.com) [issues#1](https://github.com/Flarum-Chinese/mediaembed/issues/1)
+- youku [优酷](http://www.youku.com) （s9e/TextFormatter 默认已经支持）
