@@ -49,7 +49,7 @@ class Listener
                     'width'  => 480,
                     'height' => 400,
                     'flashvars' => "from=ku6",
-                    'src'    => 'http://player.ku6.com/refer/{@id}/v.swf'
+                    'src'    => 'http://player.ku6.com/refer/{@id}/v.swf&auto=0'
                 ]
             ]
         );
