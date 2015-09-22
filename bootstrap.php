@@ -44,7 +44,7 @@ class Listener
             'ku6',
             [
                 'host'    => 'ku6.com',
-                'extract' => "!ku6\\.com/show/(?'id'[\\w\\.]+)\\.html!",
+                'extract' => "!ku6\\.com/show/(?'id'[\\w\\.\\-]+)\\.html!",
                 'flash'  => [
                     'width'  => 480,
                     'height' => 400,
