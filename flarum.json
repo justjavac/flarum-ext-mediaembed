@@ -3,7 +3,7 @@
 	"title": "媒体自动嵌入",
 	"description": "自动将第三方网站的媒体（视频、音频等）嵌入到 Flarum 中。",
 	"keywords": ["embed","youku","media","ku6","tudou"],
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"author": {
 		"name": "justjavac"
 	},
