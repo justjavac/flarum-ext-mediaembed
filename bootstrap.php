@@ -7,25 +7,25 @@ use s9e\TextFormatter\Configurator\Bundles\MediaPack;
 
 class Extension extends BaseExtension
 {
-	public function listen(Dispatcher $events)
-	{
-		$events->subscribe(__NAMESPACE__ . '\\Listener');
-	}
+    public function listen(Dispatcher $events)
+    {
+        $events->subscribe(__NAMESPACE__ . '\\Listener');
+    }
 }
 
 class Listener
 {
-	public function subscribe(Dispatcher $events)
-	{
-		$events->listen('Flarum\\Events\\FormatterConfigurator', [$this, 'addMediaSites']);
-	}
+    public function subscribe(Dispatcher $events)
+    {
+        $events->listen('Flarum\\Events\\FormatterConfigurator', [$this, 'addMediaSites']);
+    }
 
-	public function addMediaSites(FormatterConfigurator $event)
-	{
-		$event->configurator->templateChecker->remove('DisallowUnsafeDynamicCSS');
-		$event->configurator->MediaEmbed->enableResponsiveEmbeds();
+    public function addMediaSites(FormatterConfigurator $event)
+    {
+        $event->configurator->templateChecker->remove('DisallowUnsafeDynamicCSS');
+        $event->configurator->MediaEmbed->enableResponsiveEmbeds();
 
-		// https://github.com/s9e/TextFormatter/blob/master/docs/Plugins/MediaEmbed/Add_custom.md
+        // https://github.com/s9e/TextFormatter/blob/master/docs/Plugins/MediaEmbed/Add_custom.md
         // 网易云音乐
         $event->configurator->MediaEmbed->add(
             'music163',
@@ -53,8 +53,8 @@ class Listener
                 ]
             ]
         );
-		(new MediaPack)->configure($event->configurator);
-	}
+        (new MediaPack)->configure($event->configurator);
+    }
 }
 
 return __NAMESPACE__ . '\\Extension';
